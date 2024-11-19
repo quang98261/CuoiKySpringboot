@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Đăng Nhập</title>
+  <style>
+
+    body {
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: #333;
+    }
+
+    .login-container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    label {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 5px;
+      display: inline-block;
+      color: #666;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      transition: all 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      border-color: #6a11cb;
+      box-shadow: 0 0 5px rgba(106, 17, 203, 0.2);
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+      background-color: #6a11cb;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2575fc;
+      box-shadow: 0 4px 10px rgba(37, 117, 252, 0.3);
+    }
+
+    /* Responsive design */
+    @media (max-width: 500px) {
+      .login-container {
+        padding: 20px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+<div class="login-container">
+  <h2>Đăng Nhập</h2>
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="username">Tên Đăng Nhập:</label>
+      <input style="width: 365px" type="text" id="username" name="username" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Mật Khẩu:</label>
+      <input style="width: 365px" type="password" id="password" name="password" required>
+    </div>
+    <button type="submit">
+      <a style="color: white; text-decoration: none" href="/">Đăng Nhập</a>
+    </button>
+  </form>
+</div>
+
+</body>
+</html>
